@@ -14,7 +14,7 @@ const List = ({list}) => (
                         <div className="h-48 lg:h-auto lg:w-64 flex-none bg-cover rounded-t lg:rounded-t-none  text-center overflow-hidden" style={{backgroundImage: `url(${l.photo})`}} title={l.name}>
                         </div>
 
-                        <div className="border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white sm:rounded lg:rounded-l-none lg:rounded-b-none  lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                        <div className="border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white sm:rounded lg:rounded-l-none lg:rounded-b-none  lg:rounded-r p-4 lg:pt-1 flex flex-col justify-between leading-normal">
                             <div className="mb-6 text-webkit-center">
                                 <div className="flex justify-between">
                                     <p className="text-sm text-gray-600 flex items-center">
@@ -26,7 +26,7 @@ const List = ({list}) => (
                                     </button>
                                 </div>
                                 <div className="text-gray-900 font-bold text-2xl mb-6">Here's Todo Info</div>
-                                <div className="text-container lg:m-6">
+                                <div className="text-container lg:m-6 lg:mb-1 ">
                                     <p className="text-gray-700 text-base text-left lg:w-3/4">Some Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla ssssssssssssssss Some Description Lorem ipsum dolor sit amet, consectetur
                                         adipisicing elit. Voluptatibus quia, nulla ssssssssssssssss Some Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla ssssssssssssssss</p>
                                 </div>
