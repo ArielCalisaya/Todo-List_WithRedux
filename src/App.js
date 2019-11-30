@@ -5,13 +5,16 @@ import List from './components/list';
 
 import './App.css';
 
-const App = () => (
-    <Provider store={store}>
-        <main>
-            <h1>Todo App Main App z-initial</h1>
-            <List/>
-        </main>
-    </Provider>
-)
+const App = () => {
+    return(
+        <Provider store={store}>
+            <main className="bg-gray-800 items-center flex-col flex  text-center justify-center text-xl" >
+                <h1 className="text-4xl text-white pt-8">Todo App Main App z-initial</h1>
+                <List/>
+            </main>
+        </Provider>
+
+    )
+}
 
 export default App;
