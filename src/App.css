@@ -6,7 +6,9 @@ body {
 .App {
   text-align: center;
 }
-
+.text-webkit-center {
+  text-align: -webkit-center;
+}
 .InitHome {
   background-color: #282c34;
   min-height: 100vh;
