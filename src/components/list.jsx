@@ -3,19 +3,19 @@ import { connect } from 'react-redux';
 
 
 const List = ({LisTodo}) => (
-<section>
 
+<section>
     <div className="container-todo lg:pt-0 pb-6 lg:ml-64 lg:mr-64">
         {
             LisTodo.map(l => {
                 return(
                     <div key={l.id} className="max-w-sm w-full lg:max-w-full pt-4">
-                        <button className="sm:w-20 lg:w-full focus:outline-none focus:shadow-outline  bg-green-600 font-semibold hover:text-white py-0 lg:rounded-none md:rounded-full  md:rounded-b lg:rounded-t">
+                        <button className="sm:w-20 lg:w-full focus:outline-none focus:shadow-outline  bg-green-600 font-semibold hover:text-white py-0 lg:rounded-none w-20 rounded-b rounded-full md:rounded-full  md:rounded-b lg:rounded-t">
                             <i className="fa fa-refresh" aria-hidden="true"></i>
                         </button>
 
 
-                        <div className="border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white sm:rounded lg:rounded-t-none lg:rounded-b-none  lg:rounded-b p-4 lg:pt-1 flex flex-col justify-between leading-normal">
+                        <div className="border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white sm:rounded lg:rounded-t-none lg:rounded-b-none  lg:rounded-b pl-4 pb-4 pr-4 lg:pt-1 flex flex-col justify-between leading-normal">
                             <div className="mb-6 text-webkit-center">
                                 <div className="flex justify-between">
                                     <p className="text-sm text-gray-600 flex items-center">
