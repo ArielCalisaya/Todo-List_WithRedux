@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 
 
 const List = ({LisTodo, Eliminar}) => {
+
+
     const TodoList = LisTodo.length ? (
         LisTodo.map(l => {
             return(
@@ -42,7 +44,7 @@ const List = ({LisTodo, Eliminar}) => {
             )
         })
     ) : (
-        <p className="w-64 h-64  bg-gray-400 ">Felicidades, no hay más cosas por hacer</p>
+        <p className="w-64 mt-12 h-64 pt-24 bg-gray-400 ">Felicidades, no hay más cosas por hacer</p>
     )
 
 return(
@@ -66,6 +68,12 @@ const mapDispatchToProps = dispatch => ({
             type:"ELIMINAR_TODO",
             todo
         })
+    },
+    Agregar(todoId) {
+        dispatch({
+            type:"AGREGAR_TODO",
+            todoId
+        })
     }
 })
 
@@ -74,3 +82,4 @@ export default connect(mapStateToProps, mapDispatchToProps)(List)
 
 // TODO: button de estado de list va a ser 1 solo state el cual se podra seleccionar mediante un modal
 // TODO: Falta Filtrado, abrir modal para todo, submit, delete, cambiar estado de todo y editar
+// FIXME: Posiblemente esta mal estructurado la funcion al mapear debido a que interfiere .length en la funcion onclick de mi componente agregar
