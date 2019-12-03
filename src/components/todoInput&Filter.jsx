@@ -30,7 +30,7 @@ const InputFilter = ({AddTodo}) => {
                       <div className="modal-footer">
                         <button type="button" className="btn btn-danger" data-dismiss="modal">Close</button>
                         <button
-                        onClick={() => AddTodo(console.log("button funciona"))}
+                        onClick={() =>(console.log("funciona"))}
                         type="button"
                         className="btn btn-success">Add to do</button>
                       </div>
