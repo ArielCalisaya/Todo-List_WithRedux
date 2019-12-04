@@ -31,7 +31,7 @@ const ReduccerList = (state = initialState, action) => {
 
     if (action.type === "AGREGAR_TODO") {
         return(
-            {}
+            console.log("funciona")
         )
     }
 

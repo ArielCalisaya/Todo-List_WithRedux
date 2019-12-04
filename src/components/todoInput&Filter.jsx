@@ -12,8 +12,7 @@ const InputFilter = ({AddTodo}) => {
             </div>
             <div>
                 <Filter/>
-            </div>j
-
+            </div>
                 <div className="modal fade" id="Modal-Input" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                   <div className="modal-dialog modal-dialog-centered" role="document">
                     <div className="modal-content">
@@ -30,7 +29,7 @@ const InputFilter = ({AddTodo}) => {
                       <div className="modal-footer">
                         <button type="button" className="btn btn-danger" data-dismiss="modal">Close</button>
                         <button
-                        onClick={() =>(console.log("funciona"))}
+                        onClick={() => AddTodo()}
                         type="button"
                         className="btn btn-success">Add to do</button>
                       </div>
@@ -54,3 +53,4 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(InputFilter)
+// FIXME: Me Retorna Problemas con mapStateToProps
