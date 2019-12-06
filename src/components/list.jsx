@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 
 const List = ({LisTodo, Eliminar}) => {
-
+// TODO: deberia cambiar por clase y luego añadir componentDidMount par hacer fetch
 
     const TodoList = LisTodo.length ? (
         LisTodo.map(l => {
@@ -70,6 +70,8 @@ const mapDispatchToProps = dispatch => ({
         })
     },
 })
+
+
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(List)
