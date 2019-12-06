@@ -1,8 +1,8 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import store from './store';
+import store from './reducers/index.js';
 import './App.css';
-import Layout from './container/Layout';
+import Layout from './containers/Layout';
 
 
 

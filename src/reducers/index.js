@@ -1,5 +1,5 @@
-import types from './actions/actionTypes';
-import { createStore} from 'redux';
+import types from '../actions/actionTypes';
+import { createStore } from 'redux';
 
 const initialState = {
     todo:[
@@ -22,7 +22,7 @@ const initialState = {
 
 const ReduccerList = (state = initialState, action) => {
     switch (action.type) {
-        case ADD_TODO:
+        case types.ADD_TODO:
         return[
             ...state,
             {
@@ -32,13 +32,13 @@ const ReduccerList = (state = initialState, action) => {
             }
         ]
 
-        case DELETE_TODO:
+        case types.DELETE_TODO:
         return {
-            todo: state.todo.filter(del => del.id !== action.todo.id)
+            todo: state.todo.filter(l => l.id !== action.todo.id)
         }
 
         default:
-        return state.todo
+        return state
     }
 }
 export default createStore(ReduccerList)

@@ -1,8 +1,9 @@
 import types from './actionTypes';
 
+let nexTodo = 0
 export const addTodo = (id, title, text) => ({
   type: types.ADD_TODO,
-  id,
+  id: nexTodo++,
   title,
   text
 });
