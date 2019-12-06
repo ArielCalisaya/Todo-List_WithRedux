@@ -8,7 +8,7 @@ const initialState = {
             name: "Ariel Calisaya",
             photo: "https://www.underconsideration.com/brandnew/archives/me_bank_logo_detail.png",
             todo: "Let's finish this todooo",
-            description: 'Some Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla ssssssssssssssss Some Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla ssssssssssssssss Some Description Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+            description: 'Some Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla  sit amet, consectetur adipisicing elit.'
         },
         {
             id:2,
@@ -17,13 +17,6 @@ const initialState = {
             todo: "i believe i cant fly",
             description: 'lorem ipsum onekant aomdem aodmoe maodm kodem meneenee aaorie claama akosdm'
         },
-        {
-            id:3,
-            name: "Thomas Gihn",
-            photo: "http://margaretperry.org/wp-content/uploads/2014/10/Cantinflas.jpg",
-            todo: "Redux is very interesting",
-            description:' ayer fui a mcdonalds por ende me urgio '
-        }
     ],
 }
 
